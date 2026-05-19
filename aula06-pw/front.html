@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato - projeto celide</title>
+    <style>
+    body {font-family: arial, sans-serif; padding:20px; }
+    form {max-width: 300px; display: flex; flex-direction: column; gap: 10px;}
+    input, textarea, button {padding: 8px;}
+    </style>
+</head>
+<body>
+    <h2>fale conosco</h2>
+
+    <form action="processa.php" method="post">
+        <label>nome:</label>
+        <input type="text" name="nome" required>
+
+         <label>email:</label>
+        <input type="email" name="email" required>
+
+         <label>mensagem:</label>
+        <textarea name="mensagem" required></textarea>
+
+        <button type="submit">enviar dados</button>
+    </form>
+</body>
+</html>
