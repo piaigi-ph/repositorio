@@ -1,5 +1,4 @@
 <?php
-// 1. A mesma conexão da aula anterior
 
 $host = "localhost";
 $dbname = "projeto_site";
@@ -18,13 +17,11 @@ try {
     die("Erro de conexão: " . $e->getMessage());
 }
 
-// 2. Comando SQL de busca (SELECT)
 $sql = "SELECT id, nome, email, mensagem FROM contatos";
 
 $stmt = $conexao->prepare($sql);
 $stmt->execute();
 
-// 3. Guardando o resultado
 $mensagens = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
