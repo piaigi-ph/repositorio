@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Nosso Projeto</title>
+    <style>
+        /* Estilo básico */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea, button {
+            padding: 8px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fale Conosco</h2>
+
+    <!-- Formulário que envia dados para o processa.php -->
+    <form action="processa.php" method="POST">
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+
+        <label>Mensagem:</label>
+        <textarea name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar Dados</button>
+    </form>
+</body>
+</html>
